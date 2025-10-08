@@ -4,3 +4,9 @@
 .font-inter {
   font-family: "Inter", sans-serif;
 }
+a.active {
+  color: #632ee3;
+  text-decoration: underline;
+
+  font-weight: 600;
+}
