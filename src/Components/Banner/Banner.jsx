@@ -58,7 +58,7 @@ const Banner = () => {
           </div>
         </div>
       </Container>
-      <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  py-20 text-white text-center">
+      <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  py-10 lg:py-20 text-white text-center">
         <h1 className="text-5xl font-bold">
           Trusted by Millions, Built for You
         </h1>

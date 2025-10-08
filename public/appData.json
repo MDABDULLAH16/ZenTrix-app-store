@@ -1,146 +1,363 @@
 [
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/1116/1116453.png",
-    "title": "WeatherPro",
-    "companyName": "SkyTech",
     "id": 1,
-    "description": "Stay updated with real-time weather forecasts.",
-    "size": 50,
-    "reviews": 120,
-    "ratingAvg": 4.5,
-    "downloads": 10000,
-    "ratings": [
-      { "name": "1 star", "count": 2 },
-      { "name": "2 star", "count": 5 },
-      { "name": "3 star", "count": 20 },
-      { "name": "4 star", "count": 50 },
-      { "name": "5 star", "count": 43 }
-    ]
-  },
-  {
-    "image": "https://cdn-icons-png.flaticon.com/512/1534/1534071.png",
-    "title": "Fitness Tracker",
-    "companyName": "HealthCorp",
-    "id": 2,
-    "description": "Monitor your daily physical activities and health metrics.",
-    "size": 60,
-    "reviews": 150,
-    "ratingAvg": 4.2,
-    "downloads": 15000,
-    "ratings": [
-      { "name": "1 star", "count": 3 },
-      { "name": "2 star", "count": 7 },
-      { "name": "3 star", "count": 30 },
-      { "name": "4 star", "count": 60 },
-      { "name": "5 star", "count": 50 }
-    ]
-  },
-  {
-    "image": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
-    "title": "Music Streamer",
-    "companyName": "TuneIn",
-    "id": 3,
-    "description": "Stream your favorite music anytime, anywhere.",
-    "size": 70,
-    "reviews": 200,
-    "ratingAvg": 4.8,
-    "downloads": 20000,
-    "ratings": [
-      { "name": "1 star", "count": 1 },
-      { "name": "2 star", "count": 4 },
-      { "name": "3 star", "count": 15 },
-      { "name": "4 star", "count": 60 },
-      { "name": "5 star", "count": 120 }
-    ]
-  },
-  {
-    "image": "https://cdn-icons-png.flaticon.com/512/747/747310.png",
-    "title": "Photo Editor",
-    "companyName": "PicPerfect",
-    "id": 4,
-    "description": "Edit and enhance your photos with advanced tools.",
-    "size": 80,
-    "reviews": 180,
+    "image": "https://i.ibb.co.com/yBVspn20/spotify.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Stream millions of songs, podcasts, and playlists. Discover new music and enjoy personalized recommendations.",
+    "size": 38,
+    "reviews": 18000000,
     "ratingAvg": 4.6,
-    "downloads": 18000,
+    "downloads": 1000000000,
     "ratings": [
-      { "name": "1 star", "count": 2 },
-      { "name": "2 star", "count": 6 },
-      { "name": "3 star", "count": 25 },
-      { "name": "4 star", "count": 70 },
-      { "name": "5 star", "count": 77 }
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 12800000 }
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png",
-    "title": "News Reader",
-    "companyName": "DailyDigest",
-    "id": 5,
-    "description": "Get the latest news from around the world.",
-    "size": 40,
-    "reviews": 90,
-    "ratingAvg": 4.3,
-    "downloads": 12000,
-    "ratings": [
-      { "name": "1 star", "count": 1 },
-      { "name": "2 star", "count": 3 },
-      { "name": "3 star", "count": 15 },
-      { "name": "4 star", "count": 50 },
-      { "name": "5 star", "count": 21 }
-    ]
-  },
-  {
-    "image": "https://cdn-icons-png.flaticon.com/512/2910/2910761.png",
-    "title": "Task Manager",
-    "companyName": "ProductivityPlus",
-    "id": 6,
-    "description": "Organize and manage your daily tasks efficiently.",
-    "size": 55,
-    "reviews": 110,
+    "id": 2,
+    "image": "https://i.ibb.co.com/hJsKts3R/tiktok.png",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "description": "Create, watch, and share short-form videos with global communities and trending music.",
+    "size": 52,
+    "reviews": 24000000,
     "ratingAvg": 4.4,
-    "downloads": 11000,
+    "downloads": 1000000000,
     "ratings": [
-      { "name": "1 star", "count": 2 },
-      { "name": "2 star", "count": 4 },
-      { "name": "3 star", "count": 18 },
-      { "name": "4 star", "count": 60 },
-      { "name": "5 star", "count": 26 }
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2200000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 15100000 }
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/3022/3022128.png",
-    "title": "Language Translator",
-    "companyName": "LinguaTech",
-    "id": 7,
-    "description": "Translate text between multiple languages instantly.",
-    "size": 65,
-    "reviews": 130,
+    "id": 3,
+    "image": "https://i.ibb.co.com/8nYhF3m3/snapChat.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Share moments instantly with friends using photos and short videos that disappear after viewing.",
+    "size": 34,
+    "reviews": 13000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1100000 },
+      { "name": "4 star", "count": 2700000 },
+      { "name": "5 star", "count": 7900000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/0Rv7bW1Y/youtube.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "Watch videos, follow your favorite creators, and stream content from around the world.",
+    "size": 45,
+    "reviews": 52000000,
     "ratingAvg": 4.7,
-    "downloads": 13000,
+    "downloads": 10000000000,
     "ratings": [
-      { "name": "1 star", "count": 1 },
-      { "name": "2 star", "count": 2 },
-      { "name": "3 star", "count": 10 },
-      { "name": "4 star", "count": 50 },
-      { "name": "5 star", "count": 67 }
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 3000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 38800000 }
     ]
   },
   {
-    "image": "https://cdn-icons-png.flaticon.com/512/2920/2920222.png",
-    "title": "Video Editor",
-    "companyName": "ClipMaster",
-    "id": 8,
-    "description": "Edit and create stunning videos with ease.",
-    "size": 90,
-    "reviews": 160,
-    "ratingAvg": 4.9,
-    "downloads": 16000,
+    "id": 5,
+    "image": "https://i.ibb.co.com/bRQ00X7r/whatsApp.png",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms Inc.",
+    "description": "Fast, simple, and secure messaging and calling app available across the world.",
+    "size": 38,
+    "reviews": 32000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
     "ratings": [
-      { "name": "1 star", "count": 0 },
-      { "name": "2 star", "count": 1 },
-      { "name": "3 star", "count": 5 },
-      { "name": "4 star", "count": 50 },
-      { "name": "5 star", "count": 104 }
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 1400000 },
+      { "name": "3 star", "count": 2100000 },
+      { "name": "4 star", "count": 4800000 },
+      { "name": "5 star", "count": 22700000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/Z4NDhtx/instagram.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms Inc.",
+    "description": "Share photos and videos, explore trends, and connect with people worldwide through stories and reels.",
+    "size": 58,
+    "reviews": 46000000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 1800000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 7200000 },
+      { "name": "5 star", "count": 31500000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/dwK1BGD2/gps.png",
+    "title": "GPS Navigation",
+    "companyName": "SmartMap Technologies",
+    "description": "Navigate anywhere with live traffic, offline maps, and accurate directions.",
+    "size": 62,
+    "reviews": 420000,
+    "ratingAvg": 4.2,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 200000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/JRxLkNY6/tv-app.png",
+    "title": "Smart TV Hub",
+    "companyName": "VisionSoft Ltd.",
+    "description": "Stream movies, TV shows, and live sports on your smart TV with easy control and recommendations.",
+    "size": 70,
+    "reviews": 280000,
+    "ratingAvg": 4.1,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 9000 },
+      { "name": "2 star", "count": 14000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 147000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/TBfJmwnP/keep.png",
+    "title": "Google Keep",
+    "companyName": "Google LLC",
+    "description": "Capture notes, lists, and ideas quickly and sync them across all your devices.",
+    "size": 18,
+    "reviews": 5000000,
+    "ratingAvg": 4.7,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 190000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 3260000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/jPnmFFMm/mail-inbox-app.png",
+    "title": "Mail Inbox",
+    "companyName": "NextWave Labs",
+    "description": "Manage all your emails in one place with fast syncing, filters, and notifications.",
+    "size": 22,
+    "reviews": 850000,
+    "ratingAvg": 4.3,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 180000 },
+      { "name": "5 star", "count": 530000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/h1R6BPn8/viber.png",
+    "title": "Viber",
+    "companyName": "Rakuten Inc.",
+    "description": "Send free messages and make crystal-clear voice and video calls globally.",
+    "size": 40,
+    "reviews": 7500000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 350000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1300000 },
+      { "name": "5 star", "count": 5050000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/ycV6JKZR/github.png",
+    "title": "GitHub",
+    "companyName": "GitHub Inc.",
+    "description": "Develop software collaboratively, manage repositories, and contribute to open-source projects.",
+    "size": 28,
+    "reviews": 2200000,
+    "ratingAvg": 4.8,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 1475000 }
+    ]
+  },
+
+  {
+    "id": 14,
+    "image": "https://i.ibb.co.com/QgxfMWy/stock-exchange-app.png",
+    "title": "Stock Exchange",
+    "companyName": "TradePro Global",
+    "description": "Track live stock prices, analyze charts, and get real-time financial news updates.",
+    "size": 37,
+    "reviews": 1800000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1320000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co.com/5gxRQh6M/video-editing-app.png",
+    "title": "Video Editor Pro",
+    "companyName": "VisionWorks",
+    "description": "Edit videos like a pro using filters, transitions, effects, and music sync.",
+    "size": 85,
+    "reviews": 950000,
+    "ratingAvg": 4.4,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 45000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 210000 },
+      { "name": "5 star", "count": 580000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co.com/bj0vfrG4/facebook-messenger-logo.png",
+    "title": "Messenger",
+    "companyName": "Meta Platforms Inc.",
+    "description": "Instantly message friends and groups with rich media and emoji reactions.",
+    "size": 44,
+    "reviews": 39000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 29800000 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co.com/0yBq3BL5/weather-app.png",
+    "title": "Weather Forecast",
+    "companyName": "SkyTech Systems",
+    "description": "Stay updated with real-time weather alerts, forecasts, and radar maps.",
+    "size": 25,
+    "reviews": 1300000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 240000 },
+      { "name": "5 star", "count": 920000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co.com/tpRg3Hpr/linkedin.png",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "description": "Connect with professionals, build your career network, and find job opportunities.",
+    "size": 60,
+    "reviews": 12000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 8300000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/9k7X9C5Q/daily-health-app.png",
+    "title": "Daily Health",
+    "companyName": "WellnessHub",
+    "description": "Track your daily steps, heart rate, and sleep patterns to improve your fitness journey.",
+    "size": 42,
+    "reviews": 780000,
+    "ratingAvg": 4.6,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 530000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co.com/bjKgBfmg/twitter-X.png",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "description": "Join real-time conversations, share updates, and follow global trends on X.",
+    "size": 41,
+    "reviews": 27000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 1100000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 4800000 },
+      { "name": "5 star", "count": 18200000 }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://i.ibb.co.com/DDQVf9xK/google-drive.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "description": "Store, access, and share your files securely in the cloud from anywhere.",
+    "size": 55,
+    "reviews": 25000000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1700000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 16800000 }
     ]
   }
 ]

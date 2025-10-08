@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 import Container from "../Container/Container";
-import logo from "../../../public/logo.png";
-import github from "../../../public/github.svg";
+import logo from "/logo.png";
+import github from "/github.svg";
 const Navbar = () => {
   const links = (
     <div className="flex flex-col lg:flex-row gap-8 items-center text-[16px] font-medium font-inter ">
@@ -56,7 +56,10 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1">{links}</ul>
           </div>
           <div className="navbar-end">
-            <Link className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold">
+            <Link
+              to="https://github.com/MDABDULLAH16"
+              className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold"
+            >
               {" "}
               <img src={github} alt="" /> Contribute
             </Link>

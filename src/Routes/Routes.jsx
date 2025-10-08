@@ -9,7 +9,16 @@ export const router = createBrowserRouter([
     path: "/",
     Component: Root,
     children: [
-      { index: true, path: "/", Component: Home },
+      {
+        index: true,
+        path: "/",
+        loader: async () => {
+          const res = await fetch("/appData.json");
+          const data = await res.json();
+          return data;
+        },
+        Component: Home,
+      },
       { path: "/apps", Component: Apps },
       { path: "/installation", Component: Installation },
     ],
