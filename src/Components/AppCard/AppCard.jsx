@@ -1,15 +1,22 @@
 import NumberAbbreviate from "number-abbreviate";
 import { BiDownload } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 // import NumberAbbreviate from "number-abbreviate";
 const downloadsNumber = new NumberAbbreviate();
 const AppCard = ({ app }) => {
-  const { image, title, downloads, ratingAvg } = app;
+  const { image, title, downloads, ratingAvg, id } = app;
   const formatDownload = downloadsNumber.abbreviate(downloads, 1).toUpperCase();
+  const navigate = useNavigate();
+  const handleGoDetails = (id) => {
+    navigate(`/appDetails/${id}`);
+  };
   return (
-    <div className="p-4 w-full bg-white rounded-sm">
+    <div
+      onClick={() => handleGoDetails(id)}
+      className="p-4 w-full bg-white rounded-sm"
+    >
       <img
         className=" bg-[#D9D9D9] p-4 rounded-lg w-full"
         src={image}

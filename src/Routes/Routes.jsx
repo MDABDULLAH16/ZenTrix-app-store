@@ -3,6 +3,7 @@ import Root from "../Pages/Root/Root";
 import Home from "../Pages/Home/Home";
 import Apps from "../Pages/Apps/Apps";
 import Installation from "../Pages/Installation/Installation";
+import AppDetails from "../Pages/AppDetails/AppDetails";
 
 export const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/",
+
         loader: async () => {
           const res = await fetch("/appData.json");
           const data = await res.json();
@@ -19,7 +20,25 @@ export const router = createBrowserRouter([
         },
         Component: Home,
       },
-      { path: "/apps", Component: Apps },
+      {
+        path: "apps",
+        loader: async () => {
+          const res = await fetch("/appData.json");
+          const data = await res.json();
+          return data;
+        },
+        Component: Apps,
+      },
+      {
+        path: "appDetails/:id",
+        loader: async ({ params }) => {
+          const res = await fetch("/appData.json");
+          const data = await res.json();
+          const app = data.find((app) => app.id === parseInt(params.id));
+          return app;
+        },
+        Component: AppDetails,
+      },
       { path: "/installation", Component: Installation },
     ],
   },
