@@ -6,6 +6,11 @@ import { FaStar } from "react-icons/fa";
 import NumberAbbreviate from "number-abbreviate";
 import { MdRateReview } from "react-icons/md";
 import RatingsCard from "../../Components/RatingsCard/RatingsCard";
+import { toast } from "react-toastify";
+import {
+  addToLocalDB,
+  getAppsFromStored,
+} from "../../Utilities/AddToLocalStorage";
 
 const downloadNumber = new NumberAbbreviate();
 const AppDetails = () => {
@@ -20,9 +25,20 @@ const AppDetails = () => {
     ratingAvg,
     size,
     image,
+    id,
   } = app;
   const formatDownload = downloadNumber.abbreviate(downloads, 1).toUpperCase();
   const formatReviews = downloadNumber.abbreviate(reviews, 1).toUpperCase();
+  const handleInstallation = (id) => {
+    const getExistApps = getAppsFromStored();
+    if (getExistApps.includes(id)) {
+      toast.error("already installed");
+      return;
+    } else {
+      toast.success("app is installed successfully");
+      addToLocalDB(id);
+    }
+  };
   return (
     <div className="bg-[#F5F5F5] py-20">
       <Container>
@@ -71,7 +87,10 @@ const AppDetails = () => {
                 </span>
               </div>
             </div>
-            <button className="btn w-fit bg-[#00D390] text-white font-semibold text-xl mt-8">
+            <button
+              onClick={() => handleInstallation(id)}
+              className="btn w-fit bg-[#00D390] text-white font-semibold text-xl mt-8"
+            >
               {" "}
               Install Now ({size}MB)
             </button>
@@ -94,7 +113,7 @@ const AppDetails = () => {
 
         <div className="text-left ">
           <h3 className="text-2xl font-semibold my-4 lg:my-6">Description</h3>
-          <p>
+          <div>
             {description.length > 500 ? (
               <>
                 <p className="text-xl text-[#627382]">
@@ -106,7 +125,7 @@ const AppDetails = () => {
             ) : (
               "Description Not Found"
             )}
-          </p>
+          </div>
         </div>
       </Container>
     </div>
