@@ -4,11 +4,13 @@ import Home from "../Pages/Home/Home";
 import Apps from "../Pages/Apps/Apps";
 import Installation from "../Pages/Installation/Installation";
 import AppDetails from "../Pages/AppDetails/AppDetails";
+import NotFound from "../Pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         index: true,
