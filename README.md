@@ -1,16 +1,27 @@
-# React + Vite
+# ZenTrix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ZenTrix** is a modern and interactive **app store web application** where users can discover, explore, and manage various applications with ease. Designed for a seamless user experience, ZenTrix allows users to:
 
-Currently, two official plugins are available:
+- **Search Apps:** Quickly find apps using a responsive and real-time search feature.  
+- **Install & Uninstall Apps:** Users can install appsand uninstall them when no longer needed.  
+- **localStorage** for persistent installed apps.  
+- **View App Details & Reviews:** Explore detailed app information including size, ratings, number of downloads, and user reviews.  
+- **Interactive Visuals:** See app ratings with interactive charts powered by **Recharts**.  
+- **Notifications & Feedback:** Receive notifications and alerts through **React Toastify**.  
+- **Smooth User Experience:** Enjoy responsive design, loading indicators, and polished UI elements built with **Tailwind CSS** and **DaisyUI**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ZenTrix is built with modern frontend technologies to ensure speed, responsiveness, and a clean interface, making it a user-friendly platform for app discovery and management.  
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend Framework:** React  
+- **Routing:** React Router  
+- **Styling:** Tailwind CSS, DaisyUI  
+- **Icons:** React Icons  
+- **Data Visualization:** Recharts  
+- **Notifications:** React Toastify  
+- **Loading Spinners:** React Spinners  
+- **Number Formatting:** Number Abbreviate  
+- **Build Tool:** Vite  
+- **Linting:** ESLint, ESLint React Hooks, ESLint React Refresh  
+- **TypeScript Support:** @types/react, @types/react-dom, @types/number-abbreviate  
