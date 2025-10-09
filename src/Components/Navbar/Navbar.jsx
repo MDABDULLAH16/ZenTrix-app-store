@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <Link to="/" className="btn btn-ghost text-xl">
               <img height={40} width={40} src={logo} alt="" />
-              ZenTrix
+              <span className="text-[#00D390] text-3xl">ZenTrix</span>
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">

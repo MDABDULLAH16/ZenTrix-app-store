@@ -2,6 +2,7 @@ import { Outlet, useNavigation } from "react-router";
 import Navbar from "./../../Components/Navbar/Navbar";
 import { PulseLoader, RingLoader } from "react-spinners";
 import { ToastContainer } from "react-toastify";
+import Footer from "../Footer/Footer";
 
 const Root = () => {
   const navigate = useNavigation();
@@ -13,6 +14,7 @@ const Root = () => {
         {isLoading && <PulseLoader color="#00D390" />}
         <Outlet></Outlet>
       </div>
+      <Footer></Footer>
       <ToastContainer
         position="top-center"
         autoClose={1000}
