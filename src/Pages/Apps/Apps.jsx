@@ -41,7 +41,7 @@ const Apps = () => {
             </p>{" "}
             <input
               onChange={handleOnChange}
-              className="py-2 px-4 border border-[#D2D2D2]"
+              className="py-2 w-1/2 px-4 border border-[#D2D2D2]"
               type="text"
               placeholder=" 🔍 Search Apps "
             />

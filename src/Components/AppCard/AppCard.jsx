@@ -26,11 +26,11 @@ const AppCard = ({ app }) => {
       <h2 className="my-4 text-xl font-medium">{title}</h2>
 
       <div className="flex items-center justify-between">
-        <small className="flex items-center gap-2 bg-[#F1F5E8] text-[#00D390] font-medium px-2.5 rounded-sm ">
+        <small className="flex items-center gap-0.5 bg-[#F1F5E8] text-[#00D390] font-medium px-2.5 rounded-sm ">
           {" "}
           <BiDownload /> {formatDownload}
         </small>
-        <small className="flex items-center gap-2 bg-[#FFF0E1] text-[#FF8811] font-medium px-2.5 rounded-sm ">
+        <small className="flex items-center  gap-0.5 bg-[#FFF0E1] text-[#FF8811] font-medium px-2.5 rounded-sm ">
           <FaStar className="text-[#FF8811]" /> {ratingAvg}
         </small>
       </div>

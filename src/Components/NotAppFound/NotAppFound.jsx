@@ -7,7 +7,7 @@ const NotAppFound = () => {
     navigate(-1);
   };
   return (
-    <div className="bg-[#F5F5F5] h-dvh w-full mx-auto flex items-center flex-col justify-center py-8 lg:py-12">
+    <div className="bg-[#F5F5F5] h-dvh w-full mx-auto flex items-center flex-col justify-center py-4 lg:py-10">
       <img
         className="lg:w-[250px] w-[100px] h-auto"
         src={notAppFound}

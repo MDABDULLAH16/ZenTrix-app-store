@@ -7,7 +7,7 @@ const Banner = () => {
     <div>
       <Container>
         <div className="text-center flex flex-col items-center">
-          <div className="w-2/3 mx-auto">
+          <div className="w-full mx-auto">
             <h1 className="lg:text-7xl text-2xl md:text-4xl sm:text-3xl  font-black">
               We Build {""} <br />
               <span className="bg-gradient-to-r  from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
@@ -16,7 +16,7 @@ const Banner = () => {
               {""}
               Apps
             </h1>
-            <p className="text-[#627382] text-xl">
+            <p className="text-[#627382] text-xl lg:w-3/4 mx-auto">
               At Zentrix, we craft innovative apps designed to make everyday
               life simpler, smarter, and more exciting. Our goal is to turn your
               ideas into digital experiences that truly make an impact.
@@ -29,8 +29,7 @@ const Banner = () => {
             >
               {" "}
               <img
-                height={16}
-                width={18}
+                className="lg:w-8 lg:h-8 h-6 w-6"
                 src="https://i.ibb.co.com/B5Ps7dVp/app-1.png"
                 alt="Google Play"
               />
@@ -42,8 +41,7 @@ const Banner = () => {
             >
               {" "}
               <img
-                height={16}
-                width={18}
+                className="lg:w-8 lg:h-8 h-6 w-6"
                 src="https://i.ibb.co.com/ynQvP2WX/app-store.png"
                 alt="App Store"
               />

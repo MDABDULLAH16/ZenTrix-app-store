@@ -4,15 +4,28 @@ import Container from "../Container/Container";
 import logo from "/logo.png";
 import github from "/github.svg";
 const Navbar = () => {
+  const buttons = (
+    <>
+      <Link
+        to="https://github.com/MDABDULLAH16"
+        className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold"
+      >
+        {" "}
+        <img src={github} alt="" /> Contribute
+      </Link>
+    </>
+  );
   const links = (
-    <div className="flex flex-col lg:flex-row gap-8 items-center text-[16px] font-medium font-inter ">
+    <div className="flex flex-col lg:flex-row gap-2 lg:gap-8 items-center justify-between text-[16px] font-medium font-inter   text-nowrap px-2  w-full">
       <NavLink className=" " to="/">
         Home
       </NavLink>
       <NavLink to="/apps">Apps</NavLink>
       <NavLink to="/installation">My Installation</NavLink>
+      <div className="lg:hidden">{buttons}</div>
     </div>
   );
+
   return (
     <div className="bg-base-100">
       <Container>
@@ -53,17 +66,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{links}</ul>
+            <ul className="menu menu-horizontal px-1  ">{links}</ul>
           </div>
-          <div className="navbar-end">
-            <Link
-              to="https://github.com/MDABDULLAH16"
-              className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold"
-            >
-              {" "}
-              <img src={github} alt="" /> Contribute
-            </Link>
-          </div>
+          <div className="navbar-end hidden lg:flex">{buttons}</div>
         </div>
       </Container>
     </div>
