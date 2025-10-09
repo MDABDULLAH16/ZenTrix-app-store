@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData } from "react-router";
 import Container from "../../Components/Container/Container";
 import { BiDownload } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
@@ -36,20 +36,16 @@ const AppDetails = () => {
     if (getInstalledAppsFromDb.includes(id)) {
       setInstalled(true);
     }
-  }, []);
-  // console.log(getInstalledAppsFromDb.includes(id));
-
-  // const installedApps = getInstalledAppsFromDb.find((app) => app.includes(id));
-  // console.log(installedApps);
+  }, [id]);
 
   const handleInstallation = (id) => {
     const getExistApps = getAppsFromStored();
     if (getExistApps.includes(id)) {
-      toast.error("already installed");
+      toast.error(`${title} is already installed!`);
       setInstalled(true);
       return;
     } else {
-      toast.success("app is installed successfully");
+      toast.success(`${title} is Installed successfully!`);
       addToLocalDB(id);
       setInstalled(true);
     }
