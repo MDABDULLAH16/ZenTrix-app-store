@@ -40,7 +40,7 @@ const AppDetails = () => {
     ) {
       setInstalled(true);
     }
-  }, []);
+  }, [id]);
 
   const handleInstallation = (id) => {
     // console.log(typeof id);
@@ -108,7 +108,7 @@ const AppDetails = () => {
             </div>
             <button
               onClick={() => handleInstallation(id)}
-              className="btn w-fit bg-[#00D390] text-white font-semibold text-xl mt-8"
+              className={` btn w-fit bg-[#00D390] text-white font-semibold text-xl mt-8`}
             >
               {" "}
               {installed ? "Installed" : "Install Now"} ({size}MB)

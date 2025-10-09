@@ -10,7 +10,7 @@ const Navbar = () => {
         Home
       </NavLink>
       <NavLink to="/apps">Apps</NavLink>
-      <NavLink to="/installation">Installation</NavLink>
+      <NavLink to="/installation">My Installation</NavLink>
     </div>
   );
   return (
