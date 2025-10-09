@@ -15,7 +15,7 @@ const AppCard = ({ app }) => {
   return (
     <div
       onClick={() => handleGoDetails(id)}
-      className="p-4 w-full bg-white rounded-sm"
+      className="p-4 cursor-pointer w-full bg-white rounded-sm"
     >
       <img
         className=" bg-[#D9D9D9] p-4 rounded-lg w-full"

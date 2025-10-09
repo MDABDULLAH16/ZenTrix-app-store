@@ -2,20 +2,26 @@ import { useLoaderData } from "react-router";
 import AppCard from "../../Components/AppCard/AppCard";
 import Container from "./../../Components/Container/Container";
 import { useState } from "react";
+import NotAppFound from "../../Components/NotAppFound/NotAppFound";
+import { RingLoader } from "react-spinners";
 
 const Apps = () => {
   const data = useLoaderData();
   const [filterData, setFilterData] = useState(data);
-
+  const [loading, setLoading] = useState(false);
   const handleOnChange = (e) => {
-    console.log(e.target.value);
-    const amr = "amar";
-    amr.toLowerCase;
+    // console.log(e.target.value);
+
     const search = e.target.value.trim().toLowerCase();
-    const filterData = data.filter((app) =>
-      app.title.toLowerCase().includes(search)
-    );
-    setFilterData(filterData);
+
+    setLoading(true);
+    setTimeout(() => {
+      const filterData = data.filter((app) =>
+        app.title.toLowerCase().includes(search)
+      );
+      setFilterData(filterData);
+      setLoading(false);
+    }, 500);
   };
 
   return (
@@ -40,11 +46,19 @@ const Apps = () => {
               placeholder=" 🔍 Search Apps "
             />
           </div>
-          <div className="    grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 ">
+          <div
+            className={`${
+              filterData.length === 0
+                ? "flex items-center justify-center w-full"
+                : "grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 text-center   "
+            }`}
+          >
             {filterData.length === 0 ? (
-              <>
-                <h1>no apps found</h1>
-              </>
+              <NotAppFound></NotAppFound>
+            ) : loading ? (
+              <div className="fixed inset-0 flex justify-center items-center bg-black/10 backdrop-blur-sm z-50">
+                <RingLoader color="#00D390" size={100} />
+              </div>
             ) : (
               filterData.map((app) => (
                 <AppCard key={app.id} app={app}></AppCard>

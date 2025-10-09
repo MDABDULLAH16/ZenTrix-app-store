@@ -8,6 +8,7 @@ import InstalledAppsCard from "../../Components/InstalledAppCard/InstalledAppsCa
 import Container from "./../../Components/Container/Container";
 import { toast } from "react-toastify";
 import { BiDownload } from "react-icons/bi";
+import NotAppFound from "../../Components/NotAppFound/NotAppFound";
 
 const Installation = () => {
   const allApps = useLoaderData();
@@ -96,7 +97,7 @@ const Installation = () => {
           </div>
           <div className="">
             {installedApps.length === 0 ? (
-              <p className="text-gray-500 mt-4">No apps installed yet.</p>
+              <NotAppFound></NotAppFound>
             ) : (
               installedApps.map((app) => (
                 <InstalledAppsCard
