@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import error from "/error-404.png";
+
 const NotFound = () => {
   const navigate = useNavigate();
   const handleGoBack = () => {

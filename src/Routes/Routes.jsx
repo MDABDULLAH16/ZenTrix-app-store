@@ -41,7 +41,15 @@ export const router = createBrowserRouter([
         },
         Component: AppDetails,
       },
-      { path: "/installation", Component: Installation },
+      {
+        path: "/installation",
+        loader: async () => {
+          const res = await fetch("/appData.json");
+          const data = await res.json();
+          return data;
+        },
+        Component: Installation,
+      },
     ],
   },
 ]);

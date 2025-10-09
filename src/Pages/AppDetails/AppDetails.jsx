@@ -1,5 +1,5 @@
-import React from "react";
-import { useLoaderData } from "react-router";
+import React, { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router";
 import Container from "../../Components/Container/Container";
 import { BiDownload } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
@@ -14,6 +14,7 @@ import {
 
 const downloadNumber = new NumberAbbreviate();
 const AppDetails = () => {
+  const [installed, setInstalled] = useState(false);
   const app = useLoaderData();
   const {
     title,
@@ -27,16 +28,30 @@ const AppDetails = () => {
     image,
     id,
   } = app;
+
   const formatDownload = downloadNumber.abbreviate(downloads, 1).toUpperCase();
   const formatReviews = downloadNumber.abbreviate(reviews, 1).toUpperCase();
+  useEffect(() => {
+    const getInstalledAppsFromDb = getAppsFromStored();
+    if (getInstalledAppsFromDb.includes(id)) {
+      setInstalled(true);
+    }
+  }, []);
+  // console.log(getInstalledAppsFromDb.includes(id));
+
+  // const installedApps = getInstalledAppsFromDb.find((app) => app.includes(id));
+  // console.log(installedApps);
+
   const handleInstallation = (id) => {
     const getExistApps = getAppsFromStored();
     if (getExistApps.includes(id)) {
       toast.error("already installed");
+      setInstalled(true);
       return;
     } else {
       toast.success("app is installed successfully");
       addToLocalDB(id);
+      setInstalled(true);
     }
   };
   return (
@@ -92,7 +107,7 @@ const AppDetails = () => {
               className="btn w-fit bg-[#00D390] text-white font-semibold text-xl mt-8"
             >
               {" "}
-              Install Now ({size}MB)
+              {installed ? "Installed" : "Install Now"} ({size}MB)
             </button>
           </div>
         </div>
