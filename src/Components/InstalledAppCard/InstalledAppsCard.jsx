@@ -1,5 +1,5 @@
 import NumberAbbreviate from "number-abbreviate";
-import React from "react";
+
 import { BiDownload } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 
