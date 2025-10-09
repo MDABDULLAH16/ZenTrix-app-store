@@ -33,14 +33,22 @@ const AppDetails = () => {
   const formatReviews = downloadNumber.abbreviate(reviews, 1).toUpperCase();
   useEffect(() => {
     const getInstalledAppsFromDb = getAppsFromStored();
-    if (getInstalledAppsFromDb.includes(id)) {
+
+    if (
+      getInstalledAppsFromDb.length > 0 &&
+      getInstalledAppsFromDb.includes(id)
+    ) {
       setInstalled(true);
     }
-  }, [id]);
+  }, []);
 
   const handleInstallation = (id) => {
+    // console.log(typeof id);
+
     const getExistApps = getAppsFromStored();
-    if (getExistApps.includes(id)) {
+    // console.log(getExistApps);
+
+    if (getExistApps.length > 0 && getExistApps.includes(id)) {
       toast.error(`${title} is already installed!`);
       setInstalled(true);
       return;

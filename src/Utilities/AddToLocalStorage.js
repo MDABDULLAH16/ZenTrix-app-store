@@ -11,15 +11,25 @@ const getAppsFromStored = () => {
 };
 
 const addToLocalDB = (id) => {
-  //now its just an array
   const storedApps = getAppsFromStored();
+  // console.log({ storedApps, id });
+
   if (storedApps.includes(id)) {
-    toast("This App already installed");
+    toast.error("This App already installed");
+
     return;
-  } else {
-    storedApps.push(id);
-    const apps = JSON.stringify(storedApps);
-    localStorage.setItem("apps", apps);
+  }
+  // const newApps = [...storedApps, id];
+  storedApps.push(id);
+  localStorage.setItem("apps", JSON.stringify(storedApps));
+};
+
+const removeAppsFromDB = (id) => {
+  const getStoredApps = getAppsFromStored();
+
+  if (getStoredApps.length > 0) {
+    const remainingApps = getStoredApps.filter((app) => app !== id);
+    localStorage.setItem("apps", JSON.stringify(remainingApps));
   }
 };
-export { addToLocalDB, getAppsFromStored };
+export { addToLocalDB, getAppsFromStored, removeAppsFromDB };

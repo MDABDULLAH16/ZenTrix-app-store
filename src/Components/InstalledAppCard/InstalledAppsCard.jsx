@@ -4,8 +4,8 @@ import { BiDownload } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 
 const numberAbr = new NumberAbbreviate();
-const InstalledAppsCard = ({ app }) => {
-  const { image, title, downloads, ratingAvg, size } = app;
+const InstalledAppsCard = ({ app, handleUninstall }) => {
+  const { image, title, downloads, ratingAvg, size, id } = app;
   const formatDownload = numberAbr.abbreviate(downloads, 1).toUpperCase();
   return (
     <div
@@ -44,7 +44,10 @@ const InstalledAppsCard = ({ app }) => {
         </div>
       </div>
       <div>
-        <button className="btn bg-[#00D390] font-semibold text-white">
+        <button
+          onClick={() => handleUninstall(id)}
+          className="btn bg-[#00D390] font-semibold text-white"
+        >
           Uninstall
         </button>
       </div>
