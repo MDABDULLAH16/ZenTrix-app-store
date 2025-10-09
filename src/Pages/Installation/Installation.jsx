@@ -33,12 +33,20 @@ const Installation = () => {
   const handleHighToLow = (type) => {
     if (type === "High-Low") {
       setSortType("High-Low");
+
+      const sortHigh = [...installedApps].sort(
+        (a, b) => b.downloads - a.downloads
+      );
+      setInstalledApps(sortHigh);
     }
-    setSortType;
   };
   const handleLowToHigh = (type) => {
     if (type === "Low-High") {
       setSortType("Low-High");
+      const sortHigh = [...installedApps].sort(
+        (a, b) => a.downloads - b.downloads
+      );
+      setInstalledApps(sortHigh);
     }
     setSortType;
   };
